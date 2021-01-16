@@ -2,6 +2,14 @@ from talon import Module, Context, actions
 
 mod = Module()
 ctx = Context()
+ctx.matches = r"""
+mode: user.javascript
+mode: command
+and code.language: javascript
+mode: user.javascriptreact
+mode: command
+and code.language: javascriptreact
+"""
 
 @mod.capture(rule='({user.html_elements})')
 def html_elements(m) -> str:

@@ -1,3 +1,10 @@
+mode: user.javascript
+mode: command
+and code.language: javascript
+mode: user.javascriptreact
+mode: command
+and code.language: javascriptreact
+-
 
 # elm <user.text>:
 #   "<"
@@ -10,7 +17,7 @@
 # action(user.react_create_element):
 #   "hello2"
 
-# boo: "ysa"
+boo: "ysa"
 
 <user.create_element> [over]: insert(create_element)
 <user.create_closed_element> [over]:

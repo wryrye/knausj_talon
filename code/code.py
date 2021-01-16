@@ -40,6 +40,7 @@ extension_lang_map = {
     "h": "c",
     "hpp": "cplusplus",
     "js": "javascript",
+    "jsx": "javascriptreact",
     "json": "json",
     "lua": "lua",
     "md": "markdown",
