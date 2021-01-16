@@ -1,9 +1,4 @@
-from talon import cron, ctrl, ui, Module, Context, actions, noise, settings, imgui, app
-from talon.engine import engine
-from talon_plugins import speech, eye_mouse, eye_zoom_mouse
-import subprocess
-import os
-import pathlib
+from talon import Module, Context, actions
 
 mod = Module()
 ctx = Context()
@@ -100,7 +95,7 @@ def create_styled_component(m):
     return f'const {component_name} = styled.{m.html_elements}``'
 
 @ctx.capture(rule='styled wrapper <user.text>')
-def create_styled_component(m):
+def create_styled_component2(m):
     component_name = actions.user.formatted_text(m.text, 'PUBLIC_CAMEL_CASE')
     return f'const {component_name} = styled()``'
 
@@ -119,7 +114,7 @@ def component_import(m):
     return f'import {component_name} from \'@components/{component_name}\';'
 
 @ctx.capture(rule='import hook <user.text>')
-def component_import(m):
+def component_import2(m):
     hook_name = actions.user.formatted_text(m.text, 'PRIVATE_CAMEL_CASE')
     filename =  actions.user.formatted_text(m.text, 'DASH_SEPARATED') + '.hook'
     return f'import {hook_name} from \'@hooks/{filename}\';'

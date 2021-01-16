@@ -1,14 +1,7 @@
-from talon import cron, ctrl, ui, Module, Context, actions, noise, settings, imgui, app
-from talon.engine import engine
-from talon_plugins import speech, eye_mouse, eye_zoom_mouse
-import subprocess
-import os
-import pathlib
+from talon import Module, Context, actions
 
 mod = Module()
 ctx = Context()
-
-
 
 @mod.capture(rule='({user.css_attributes})')
 def css_attributes(m) -> str:
