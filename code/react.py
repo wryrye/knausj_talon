@@ -93,7 +93,7 @@ def create_element(m):
 def create_closed_element(m):
     return '<' + actions.user.formatted_text(m.text, 'PUBLIC_CAMEL_CASE') + '  />'
 
-@ctx.capture(rule='elm native <user.html_elements>')
+@ctx.capture(rule='native elm <user.html_elements>')
 def create_native_element(m):
     return '<' + actions.user.formatted_text(m.html_elements, 'PRIVATE_CAMEL_CASE') + '>'
 
@@ -194,5 +194,6 @@ ctx.lists['user.html_elements'] = {
   'table head': 'thead',
 'table row': 'tr',
 'table heading': 'th',
-'table cell': 'td'
+'table cell': 'td',
+'style': 'style'
 }

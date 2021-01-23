@@ -85,6 +85,8 @@ ctx.lists['user.css_attributes'] = {
   'letter spacing': 'letter-spacing',
   'width': 'width',
   'height': 'height',
+  'min width': 'min-width',
+  'min height': 'min-height',
   'max width': 'max-width',
   'max height': 'max-height',
   'line height': 'line-height',

@@ -213,9 +213,10 @@ simple_keys = [
 ]
 
 alternate_keys = {
-    'delete': 'delete',
-    'dell': 'delete',
-    'junk': 'backspace',
+    "delete": "delete",
+    "dell": "delete",
+    "junk": "backspace",
+    "blank": "space",
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
