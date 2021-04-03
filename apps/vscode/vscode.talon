@@ -62,6 +62,7 @@ bar run: user.vscode("workbench.view.debug")
 bar search: user.vscode("workbench.view.search")
 bar source: user.vscode("workbench.view.scm")
 bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
+bar collapse: user.vscode("workbench.files.action.collapseExplorerFolders")
 
 # Panels
 panel control: user.vscode("workbench.panel.repl.view.focus")

@@ -50,7 +50,7 @@ git push up stream origin: "git push -u origin"
 git push <user.text>: "git push {text} "
 git push tags: "git push --tags\n"
 git push force: "git push --force"
-git rebase: "git rebase\n"
+git rebase <user.text>: "git rebase origin/{text} "
 git rebase continue: "git rebase --continue"
 git rebase skip: "git rebase --skip"
 git remove: "git rm "
@@ -103,3 +103,9 @@ git commit highlighted:
     insert("git add ")
     edit.paste()
     insert("\ngit commit\n")
+
+docker <user.text>: "docker {text}"
+docker exec: "docker exec -it "
+
+napalm <user.text>: "npm {text}"
+ 
